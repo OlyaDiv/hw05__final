@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Технологии{% endblock %}
+{% block content %}
+<div class="row">
+  <h1>Вот что я умею</h1>
+  <aside class="col-12 col-md-3">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        Python
+      </li>
+      <li class="list-group-item">
+        Django
+      </li>
+      <li class="list-group-item">
+        CSS
+      </li>
+    </ul>
+  </aside>
+  <article class="col-12 col-md-9">
+     Этот замечательный сайт был создан в сентябре 2022 года.
+    <br>Не обошлось без языка Python, фреймворка Django, теории от Яндекс Практикума, поисков в Интернете и кучи ошибок.
+    <p>Но, раз вы видите эту страничку, значит все трудности были преодолены, а ошибки исправлены!</p>
+    <img src="{% static 'img/1.gif' %}" width="600" height="400" class="d-inline-block align-top" alt="">
+  </article>
+</div>
+{% endblock %}

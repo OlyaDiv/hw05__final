@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Об авторе проекта{% endblock %}
+{% block content %}
+<h1>Привет, меня зовут Ольга Дивногорская</h1>
+<p>Я еще только учусь на программиста, но уже кое-что умею!</p>
+<i>Обо мне в картинках:</i>
+<br>
+<img src="{% static 'img/mapmaking.png' %}" width="200" height="200" class="d-inline-block align-top" alt="">
+<img src="{% static 'img/paint.png' %}" width="200" height="200" class="d-inline-block align-top" alt="">
+<img src="{% static 'img/plants.png' %}" width="200" height="200" class="d-inline-block align-top" alt="">
+<img src="{% static 'img/photo.jpg' %}" width="200" height="200" class="d-inline-block align-top" alt="">
+<img src="{% static 'img/taro.jpg' %}" width="200" height="200" class="d-inline-block align-top" alt="">
+<img src="{% static 'img/walk.jpg' %}" width="200" height="200" class="d-inline-block align-top" alt="">
+<br>
+<p>По образованию я кадастровый инженер, а работаю картографом. Решила попробовать себя в новой профессии, ведь всегда есть, куда расти!
+  К сожалению, у меня нет питомца, который бы мне помогал в этом начинании, но надеюсь, что это ненадолго.
+  Меня вдохновляет рисование, уход за комнатными растениями, фотография на пленку, карты таро и прогулки на природе.</p>
+<i>Мои ссылки:</i>
+<ul>
+  <li><a href="https://github.com/OlyaDiv">Github</a></li>
+  <li><a href="">В скором времени здесь будет ссылка на HeadHunter</a></li>
+</ul>
+{% endblock %}
